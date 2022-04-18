@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.bg-container {
+  background-image: linear-gradient(to top, #c3caea, #9ba9eb);
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.app-logo {
+  padding-bottom: 30px;
+  width: 250px;
+  height: 90px;
+  padding-left: 60px;
+}
+.app-container {
+  background-color: #5763a5;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  padding-bottom: 60px;
+}
+.create-password {
+  background-color: #454f84;
+  border-radius: 20px;
+  margin-left: 40px;
+  padding: 30px;
+  width: 500px;
+  margin-top: 40px;
+}
+.heading {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 30px;
+}
+
+.input-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.box-container {
+  width: 40px;
+  background-color: #ffffff;
+  height: 40px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  outline: none;
+}
+.input-logo {
+  width: 35px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.input {
+  width: 400px;
+  height: 40px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  outline: none;
+  border-style: none;
+  margin-left: 1px;
+  padding-left: 10px;
+  font-family: 'Roboto';
+  font-size: 17px;
+  color: #64748b;
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.button {
+  color: #ffffff;
+  background-color: #0b69ff;
+  width: 70px;
+  height: 28px;
+  font-family: 'Roboto';
+  border-style: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.password-manager {
+  width: 500px;
+  height: 500px;
+  padding-right: 20px;
+}
+.passwords-container {
+  background-color: #5763a5;
+  max-width: 1380px;
+  margin-left: 48px;
+  margin-top: 25px;
+  border-radius: 10px;
+  padding: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
+  color: #ffffff;
+  font-size: 'Roboto';
+  font-size: 25px;
+  font-weight: 500;
+}
+.count {
+  font-size: 20px;
+  background-color: transparent;
+  border-radius: 13px;
+  border: 2px solid #ffffff;
+  padding-right: 13px;
+  padding-left: 13px;
+  border-color: #94a3b8;
+}
+.password-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.search-container {
+  background-color: #ffffff;
+  height: 35px;
+  width: 40px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-style: none;
+}
+.search-logo {
+  width: 35px;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.search-input {
+  height: 35px;
+  width: 150px;
+  border-style: none;
+  margin-left: 1px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  padding-left: 5px;
+  font-family: 'Roboto';
+  color: #94a3b8;
+  font-size: 17px;
+  padding-bottom: 2px;
+}
+.hr {
+  background-color: #7683cb;
+  height: 3px;
+}
+.checkbox-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 10px;
+}
+.show {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 20px;
+  padding-left: 2px;
+}
+.no-passwords-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.no-passwords-image {
+  height: 500px;
+  width: 500px;
+}
+.no-password {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 700;
+}
