@@ -6,6 +6,16 @@ import './App.css'
 
 import PasswordList from './PasswordList'
 
+const initialContainerBackgroundClassNames = [
+  'amber',
+  'blue',
+  'orange',
+  'emerald',
+  'teal',
+  'red',
+  'light-blue',
+]
+
 class App extends Component {
   state = {
     passwordsList: [],
@@ -39,12 +49,20 @@ class App extends Component {
   onAddPasswordList = event => {
     event.preventDefault()
     const {websiteInput, usernameInput, passwordInput} = this.state
+    const initialBackgroundColorClassName = `initial-container ${
+      initialContainerBackgroundClassNames[
+        Math.ceil(
+          Math.random() * initialContainerBackgroundClassNames.length - 1,
+        )
+      ]
+    }`
 
     const newPassword = {
       id: v4(),
       websiteInput,
       usernameInput,
       passwordInput,
+      initialBackgroundColorClassName,
     }
 
     this.setState(prev => ({
@@ -100,7 +118,10 @@ class App extends Component {
         />
         <div className="app-container">
           <div className="create-password">
-            <form>
+            <form
+              className="add-password-container"
+              onSubmit={this.onAddPasswordList}
+            >
               <h1 className="heading">Add New Password</h1>
               <div className="input-list">
                 <p className="box-container">
@@ -165,9 +186,9 @@ class App extends Component {
         </div>
         <div className="passwords-container">
           <div className="header-container">
-            <p className="header">
+            <h1 className="header">
               Your Passwords <span className="count">{passwordCount}</span>
-            </p>
+            </h1>
             <div className="password-list">
               <p className="search-container">
                 <img
