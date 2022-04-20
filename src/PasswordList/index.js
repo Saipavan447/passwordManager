@@ -5,7 +5,7 @@ const PasswordList = props => {
   const {
     websiteInput,
     usernameInput,
-    initialClassName,
+    initialBackgroundColorClassName,
     passwordInput,
     id,
   } = passwordDetails
@@ -28,7 +28,7 @@ const PasswordList = props => {
   return (
     <div className="password-list-items-container">
       <li className="password-list-item">
-        <div className={initialClassName}>
+        <div className={initialBackgroundColorClassName}>
           <p className="initial">{initial}</p>
         </div>
         <div className="text">

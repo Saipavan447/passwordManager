@@ -81,7 +81,7 @@ body {
   font-size: 17px;
   color: #64748b;
 }
-.button-container {
+.add-button-container {
   display: flex;
   justify-content: flex-end;
 }

@@ -171,7 +171,7 @@ class App extends Component {
                   placeholder="Enter Password"
                 />
               </div>
-              <div className="button-container">
+              <div className="add-button-container">
                 <button type="submit" className="button">
                   Add
                 </button>
@@ -187,7 +187,7 @@ class App extends Component {
         <div className="passwords-container">
           <div className="header-container">
             <h1 className="header">
-              Your Passwords <span className="count">{passwordCount}</span>
+              Your Passwords <p className="count">{passwordCount}</p>
             </h1>
             <div className="password-list">
               <p className="search-container">
